@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', cursive;
+}
+body{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    /* align-items: center ; */
+    justify-content: center;
+    background-image: url(imgs/background.jpg);
+}
+h1{
+    /* position: absolute; */
+    color: gray;
+    display: flex;
+    justify-content: center;
+}
+h1:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+form{
+    margin-top: 8%;
+    width: 100%;
+    max-width: 350px;
+    background-color: rgba(66, 66, 66, 0.507);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 10px  rgba(128, 128, 128, 0.123);
+    border: 1px solid gray;
+}
+div.single-input{
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+    
+}
+div.single-input label{
+    font-size: 16px;
+    position: absolute;
+    left:0px;
+    bottom: 5px;
+    color: gray;
+    cursor: text;
+    transition: 0.5s ease-in-out;
+    
+}
+div.single-input .input{
+    width: 100%;
+    padding: 5px;
+    color: gray;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.062);
+}
+div.single-input input:focus,
+div.single-input input:valid{
+    border-bottom: 2px solid blueviolet;
+}
+div.single-input input:focus ~ label,
+div.single-input input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: blueviolet;
+}
+
